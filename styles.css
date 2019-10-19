@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
+/*Colors
+darker blue -  #6C8A94
+lighter blue - #95C4BE
+mint blue -    #cce4d4
+Coral pop  -   #e8836f
+Darker Beige - #CCBFB4
+Lighter Beige- #EEC6AE
+pink beige   - #d6cccb
+Medium green - #65826C
+Dark Brown  -  #2A110F
+white  -  #ffffff
+*/
+
+/*font families
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+  background-image: url("images/offwhiterosegold_op.jpg");
+  padding: 2px;
+  text-decoration-color: #2A110F
+}
+
+/*heading styles*/
+h1 {
+  text-transform: lowercase;
+  font-size: 400%;
+  font-family: minion-std-black, serif;
+	padding: 20px 0px 5px 25px;
+}
+
+h2 {
+    padding: 15px 0 30px 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px #2A110F;
+    text-transform: lowercase;
+    font-size: 170%;
+}
+
+h3 {
+  padding: 4px;
+  font-size: 175%;
+  font-family: minion-pro-caption, serif;
+  font-style: italic;
+}
+
+h4 {
+  padding: 2px;
+  font-family: minion-std-black, serif;
+  text-shadow: .5px .5px #cce4d4;
+  font-size: 1.3em;
+}
+/*end of heading styles*/
+
+header {
+	background-color: #f3d5c3;
+  padding: 13px 13px;
+}
+
+/*main style*/
+
+
+/*footer styles*/
+footer {
+	background-color: #6C8A94;
+	clear: both;
+	color: #2A110F;
+  width: 94%;
+  padding: 3%;
+}
+
+footer figure {
+    margin-left: 2px;
+}
+
+footer figure img {
+  width: 10%;
+  height: auto;
+}
+
+#logo {
+  width: 30%;
+  height: auto;
+}
+
+/*for sticky footer*/
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+/*end sticky footer*/
+
+/*images on Portfolio page with flexbox*/
+.image-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio figure {
+  width: 100%;
+}
+
+.image-set image {
+  max-width: 100%;
+}
+
+/*media query*/
+@media (min-width: 600px) {
+	.portfolio figure {
+		width: 50%;
+	}
+}
+
+@media (min-width: 900px) {
+	.portfolio figure {
+		width: 33.3%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.portfolio figure {
+		width: 25%;
+	}
+}
+
+@media (min-width: 1900px) {
+	.portfolio figure {
+		width: 16.6667%;
+	}
+}
