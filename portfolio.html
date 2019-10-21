@@ -22,53 +22,46 @@
 	<body>
 
 		<div id="container">
-
-
-		<header>
-			<h1>Lauren Perrault</h1>
-			<h2>Web Designer, Content Creator</h2>
-
-			<nav>
-					<ul>
-							<li><a href="index.html">home</a></li>
-							<li><a href="about.html">about</a></li>
-							<li><a href="contact.html">contact</a></li>
-							<li class="active">portfolio</li>
-							<li><a href="services.html">services</a></li>
-						</ul>
-			</nav>
-		</header>
+			<header>
+	        <div class="logo"><a href="index.html">HOME</a></div>
+	        <ul class="nav">
+						<li class="navlink"><a href="about.html">about</a></li>
+						<li class="navlink"><a href="contact.html">contact</a></li>
+						<li class="navlink"><a href="services.html">services</a></li>
+	        </ul>
+	        <div class="burger">
+	            <i class="fas fa-bars"></i>
+	        </div>
+	    </header>
+	    <script src="js/nav.js"></script>
 
 		<main>
 			<section class="portfolio">
 					<h3>Redesign Projects</h3>
-							<article class="image-set">
+							<div class="image-set">
 								<figure class="menu"><img src="images/cudamenu.jpg" alt="barracuda menu"/></figure>
+								<figure><img src="images/barracuda_original.png" alt="barracuda original menu" /></figure>
 								<figure class="nuru"><img src="images/NURUlogo_horiz_ALT.jpg" alt="Logo for NURU"/></figure>
 								<figure class="target"><img src="images/Webad_rect.jpg" alt="Target Ad" /></figure>
+								<figure><img src="images/DaughterAphroditeOriginal.jpg" alt="Book Cover Original" /></figure>
 								<figure class="book"><img src="images/stack_book.jpg" alt="Book Cover Redesign" /></figure>
+								<figure><img src="images/Roo_old.jpg" alt="Original Roo logo" /></figure>
 								<figure class="roo"><img src="images/RooLogo_5.png" alt="Roo logo redesign" /></figure>
 								<figure class="travel"><img src="images/TwitterHeader.jpg" alt="Travel Ad for Twitter" /></figure>
 								<figure class="roo2"><img src="images/FBpost1.jpg" alt="Roo Facebook Ad" /></figure>
 								<figure class="kiva"><img src="images/KivaIMC_3.jpg" alt="KIVA Ad" /></figure>
-							</article>
-			</section>
-			<section class="portfolio">
-					<h3>University Projects</h3>
-								<article class="image-set">
-									<figure class="product"><img src="images/products.jpg" alt="Photoshop Product Change"/></figure>
-									<figure class="TC"><img src="images/GreetingCardTC.jpg" alt="Greeting Card"></figure>
-									<figure class="PS"><img src="images/PSCapabilities4.jpg" alt="PS capabilities poster"></figure>
-								</article>
+							</div>
+							<div class="image-set">
+								<figure class="product"><img src="images/products.jpg" alt="Photoshop Product Change"/></figure>
+								<figure class="TC"><img src="images/GreetingCardTC.jpg" alt="Greeting Card"></figure>
+								<figure class="PS"><img src="images/PSCapabilities4.jpg" alt="PS capabilities poster"></figure>
+							</div>
 				</section>
 			</main>
 
 		<footer>
 			<figure>
 				<img src="images/socialmediaicons.png" alt="social media icons">
-			</figure>
-			<figure id="logo">
-				<img src="images/lplogo.png" alt="LP logo">
 			</figure>
 		</footer>
 
